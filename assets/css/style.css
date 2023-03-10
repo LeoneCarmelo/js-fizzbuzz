@@ -1,6 +1,33 @@
-/* Reset */
+/* #region Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* #endregion Reset */
+
+/* #region Color */
+:root {
+    --body:#083b4c;
+    --normal-square: #1389b2;
+    --fizz: #0cd6a1;
+    --buzz: #ffd166;
+    --fizzbuzz: #f0466f;
+}
+/* #endregion Color */
+
+body {
+    background-color: var(--body);
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    width:100px;
+    aspect-ratio: 1 / 1;
+    border:1px solid;
+    text-align: center;
+    line-height: 100px;
 }

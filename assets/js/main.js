@@ -7,6 +7,8 @@ Scrivi un programma che stampi in console i numeri da 1 a 100 ma che:
 
 // Declare a variable to put all the new results
 let number = 0
+
+
 // Generate all the numbers needed
 for (let i = 1; i < 101; i++) {
     // looking for the numbers that are multiple of 3 and 5
@@ -29,5 +31,19 @@ for (let i = 1; i < 101; i++) {
         number = i
     }
     console.log(number) 
-
+    
+    /* Create Html elements */
+    const liEl = document.createElement('li')
+    const ulEl = document.querySelector('ul')
+    liEl.innerHTML = number
+    if( number === 'fizzbuzz') {
+        liEl.style.backgroundColor = '#f0466f'
+    } else if (number === 'fizz') {
+        liEl.style.backgroundColor = '#0cd6a1'
+    } else if(number === 'buzz' ) {
+        liEl.style.backgroundColor = '#ffd166'
+    } else {
+        liEl.style.backgroundColor = '#1389b2'
+    }
+    ulEl.append(liEl)
 }
